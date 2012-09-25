@@ -7,3 +7,6 @@
 [submodule "accumulo"]
 	path = accumulo
 	url = https://github.com/apache/accumulo.git
+[submodule "hadoop-common"]
+	path = hadoop-common
+	url = https://github.com/apache/hadoop-common.git
