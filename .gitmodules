@@ -4,3 +4,6 @@
 [submodule "zookeeper"]
 	path = zookeeper
 	url = https://github.com/apache/zookeeper.git
+[submodule "accumulo"]
+	path = accumulo
+	url = https://github.com/apache/accumulo.git
