@@ -9,9 +9,12 @@ It uses git submodules to track the necessary repos/branches from github:
 
 # How-To
 ##Prerequisites
-*working Java installation
-*ant
-*maven2
+* working Java installation
+* ant
+* maven2
+
+_These are the commands in the buildall.sh script. You can run that and walk away for a while if you 
+don't want to step through and wait for each build._
 
 ##Get the repo, setup submodules 
 
