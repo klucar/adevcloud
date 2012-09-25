@@ -13,9 +13,6 @@ It uses git submodules to track the necessary repos/branches from github:
 * ant
 * maven2
 
-_These are the commands in the buildall.sh script. You can run that and walk away for a while if you 
-don't want to step through and wait for each build._
-
 ##Get the repo, setup submodules 
 
      git clone https://github.com/klucar/adevcloud.git
@@ -26,6 +23,10 @@ don't want to step through and wait for each build._
 _now go get a cup of coffee or tea or redbull..._
 
 ##Compile everything
+
+_These are the commands in the 'buildall.sh' script. You can run that and walk away for a while if you 
+don't want to step through and wait for each build._
+
 ### Hadoop
 
      cd hadoop-common
