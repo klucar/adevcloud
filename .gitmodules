@@ -1,3 +1,6 @@
 [submodule "hadoop"]
 	path = hadoop
 	url = https://github.com/apache/hadoop.git
+[submodule "zookeeper"]
+	path = zookeeper
+	url = https://github.com/apache/zookeeper.git
