@@ -8,11 +8,13 @@ It uses git submodules to track the necessary repos/branches from github:
 * zookeeper (release-3.3.5)
 
 # How-To
-From a fresh clone of this repo: 
+From the top: 
 
+     git clone https://github.com/klucar/adevcloud.git
+     cd adevcloud
      git submodule init
      git submodule update
 
-__now go get a cup of coffee or tea or redbull...__
+_now go get a cup of coffee or tea or redbull..._
 
 
