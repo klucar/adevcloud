@@ -1,5 +1,11 @@
 *.class
 
+# Build Directories #
+./accumulo-1.4.1
+./hadoop-0.20.203.1-SNAPSHOT
+./zookeeper-3.3.6
+
 # Package Files #
+*.jar
 *.war
 *.ear
