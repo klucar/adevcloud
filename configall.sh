@@ -24,8 +24,8 @@ cp $ADC_HOME/conf/accumulo/* $ADC_ACCUMULO/conf/.
 #################################################
 # hadoop_env.sh
 # XX_JAVA_HOME_XX
-echo "ADC_HOME = " $ADC_HOME
-echo "ADC_HADOOP = " $ADC_HADOOP
+#echo "ADC_HOME = " $ADC_HOME
+#echo "ADC_HADOOP = " $ADC_HADOOP
 sed 's|XX_JAVA_HOME_XX|'$JAVA_HOME'|g' $ADC_HOME/conf/hadoop/hadoop-env.sh > $ADC_HADOOP/conf/hadoop-env.sh 
 
 # Prompts user for a directory name
@@ -47,7 +47,6 @@ function prompt_dir {
 # hdfs-site.xml
 # XX_HADOOP_NAME_XX
 #
-echo "Getting hadoop name node data location"
 HADOOP_NAME=''
 prompt_dir HADOOP_NAME "Hadoop Namenode Data Location" "$ADC_HOME/data/hadoop/nn"
 sed 's|XX_HADOOP_NAME_XX|'$HADOOP_NAME'|g' $ADC_HOME/conf/hadoop/hdfs-site.xml > $ADC_HOME/conf/hadoop/hdfs-site-tmp.xml 
@@ -72,6 +71,5 @@ sed 's|XX_MAPRED_LOCAL_XX|'$MAPRED_DATA'|g' $ADC_HOME/conf/hadoop/mapred-site.xm
 ZOO_DATA=''
 prompt_dir ZOO_DATA "Zookeeper Data Location" "$ADC_HOME/data/zookeeper"
 sed 's|XX_ZOOKEEPER_DATA_XX|'$ZOO_DATA'|g' $ADC_HOME/conf/zookeeper/zoo.cfg > $ADC_ZOOKEEPER/conf/zoo.cfg 
-
 
 

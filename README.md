@@ -12,6 +12,7 @@ It uses git submodules to track the necessary repos/branches from github:
 * working Java installation
 * ant
 * maven2
+* password-less ssh setup
 
 ##Get the repo, setup submodules 
 
@@ -48,12 +49,24 @@ don't want to step through and wait for each build._
      tar xvf target/accumulo-1.4.1-dist.tar.gz -C ../.
      cd ..
 
+## Set config files
+The _configall.sh_ script will prompt for directories where you want various files stored on the local filesystem.
+Just pressing Enter will accept the default values.
+
+     $ ./configall.sh 
+          Hadoop Namenode Data Location : 
+          ( /foo/bar/adevcloud/data/hadoop/nn ) > 
+          Hadoop Datanode Data Location : 
+          ( /foo/bar/adevcloud/data/hadoop/dn ) > 
+          Map/Reduce Data Location : 
+          ( /foo/bar/adevcloud/data/hadoop/mr ) > 
+          Zookeeper Data Location : 
+          ( /foo/bar/adevcloud/data/zookeeper ) > 
+
+
 ## Set Environment Variables
 
      
-## Set config files
-
-
 ## Init Hadoop
 
 
