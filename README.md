@@ -24,7 +24,7 @@ _now go get a cup of coffee or tea or redbull..._
 
 ##Compile everything
 
-_These are the commands in the 'buildall.sh' script. You can run that and walk away for a while if you 
+_These are the commands in the `buildall.sh` script. You can run that and walk away for a while if you 
 don't want to step through and wait for each build._
 
 ### Hadoop
@@ -47,6 +47,24 @@ don't want to step through and wait for each build._
      mvn package && mvn assembly:single -N
      tar xvf target/accumulo-1.4.1-dist.tar.gz -C ../.
      cd ..
+
+## Set Environment Variables
+
+     
+## Set config files
+
+
+## Init Hadoop
+
+
+## Start Hadoop, Zookeeper
+
+
+## Init Accumulo
+
+
+## Start Accumulo
+
 
 
 
