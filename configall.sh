@@ -49,13 +49,15 @@ function prompt_dir {
 #
 HADOOP_NAME=''
 prompt_dir HADOOP_NAME "Hadoop Namenode Data Location" "$ADC_HOME/data/hadoop/nn"
-sed 's|XX_HADOOP_NAME_XX|'$HADOOP_NAME'|g' $ADC_HOME/conf/hadoop/hdfs-site.xml > $ADC_HOME/conf/hadoop/hdfs-site-tmp.xml 
+sed 's|XX_HADOOP_NAME_XX|'$HADOOP_NAME'|g' $ADC_HOME/conf/hadoop/hdfs-site.xml > $ADC_HOME/conf/hadoop/hdfs-site-tmp.xml
+chmod 755 $HADOOP_NAME
 
 # XX_HADOOP_DATA_XX
 #
 HADOOP_DATA=''
 prompt_dir HADOOP_DATA "Hadoop Datanode Data Location" "$ADC_HOME/data/hadoop/dn"
 sed 's|XX_HADOOP_DATA_XX|'$HADOOP_DATA'|g' $ADC_HOME/conf/hadoop/hdfs-site-tmp.xml > $ADC_HADOOP/conf/hdfs-site.xml
+chmod 755 $HADOOP_DATA
 rm $ADC_HOME/conf/hadoop/hdfs-site-tmp.xml
 
 # mapred-site.xml
