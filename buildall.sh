@@ -1,7 +1,10 @@
 #!/bin/env bash
 
-# just a compilation of the steps outlined in the README.md
+git submodule init
+git submodule update
 
+# just a compilation of the steps outlined in the README.md
+     
      cd hadoop-common
      ant binary
      tar xvf ./build/hadoop-0.20.203.1-SNAPSHOT-bin.tar.gz -C ../.
