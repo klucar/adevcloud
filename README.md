@@ -1,11 +1,13 @@
 adevcloud
 =========
-A fast way to get Accumulo up and running on your local machine.
+A fast way to get Accumulo up and running on your local machine. Well, it's not really that fast but hopefully it's a bit less painful than it can be.
 
 It uses git submodules to track the necessary repos/branches from github:
 * accumulo (1.4.1)
 * hadoop-common (release-0.20.203.0)
 * zookeeper (release-3.3.6)
+
+It then downloads all the source from github, compiles it, and fills in some config files for you.
 
 # How-To
 ##Prerequisites
@@ -62,7 +64,7 @@ The _configall.sh_ script will prompt for directories where you want various fil
           Zookeeper Data Location : 
           ( /foo/bar/adevcloud/data/zookeeper ) > 
 
-__This script also set the appropriate environment variables in your .bashrc file__
+__This script also sets the appropriate environment variables in your .bashrc file__
 
 ## Init Hadoop
 _From a new terminal_
@@ -81,10 +83,16 @@ _this will prompt for an instance name and password for the Accumulo root user_
 ## Start Accumulo
      $ /foo/bar/adevcloud/accumulo-1.4.1/bin/start-all.sh
 
-## Checkout Accumulo
+## Now go do something with Accumulo
     $ /foo/bar/adevcloud/accumulo-1.4.1/bin/accumulo shell -u root
 
-
-
-
+### tl;dr
+    git clone https://github.com/klucar/adevcloud
+    cd adevcloud
+    git submodule init
+    git submodule update
+    ./buildall.sh
+    ./configall.sh
+    ./initall.sh
+    ./accumulo-1.4.1/bin/accumulo shell -u root
 
