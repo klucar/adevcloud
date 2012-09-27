@@ -66,6 +66,7 @@ Just pressing Enter will accept the default values.
 __This script set the appropriate environment variables in your .bashrc file__
 
 ## Init Hadoop
+_From a new terminal_
      $ /foo/bar/adevcloud/hadoop-0.20.203.1-SNAPSHOT/bin/namenode format
 
 ## Start Hadoop, Zookeeper
