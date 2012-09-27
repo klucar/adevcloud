@@ -50,8 +50,7 @@ don't want to step through and wait for each build._
      cd ..
 
 ## Set config files
-The _configall.sh_ script will prompt for directories where you want various files stored on the local filesystem.
-Just pressing Enter will accept the default values.
+The _configall.sh_ script will prompt for directories where you want various files stored on the local filesystem. It then adds the appropriate values and copies config files where they need to go. Just pressing Enter will accept the default values.
 
      $ ./configall.sh 
           Hadoop Namenode Data Location : 
@@ -63,7 +62,7 @@ Just pressing Enter will accept the default values.
           Zookeeper Data Location : 
           ( /foo/bar/adevcloud/data/zookeeper ) > 
 
-__This script set the appropriate environment variables in your .bashrc file__
+__This script also set the appropriate environment variables in your .bashrc file__
 
 ## Init Hadoop
 _From a new terminal_
