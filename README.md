@@ -63,20 +63,26 @@ Just pressing Enter will accept the default values.
           Zookeeper Data Location : 
           ( /foo/bar/adevcloud/data/zookeeper ) > 
 
+__This script set the appropriate environment variables in your .bashrc file__
 
-## Set Environment Variables
-
-     
 ## Init Hadoop
-
+     $ /foo/bar/adevcloud/hadoop-0.20.203.1-SNAPSHOT/bin/namenode format
 
 ## Start Hadoop, Zookeeper
-
+     $ /foo/bar/adevcloud/hadoop-0.20.203.1-SNAPSHOT/bin/start-all.sh
+     $ /foo/bar/adevcloud/zookeeper-3.3.6/bin/zkServer.sh start
 
 ## Init Accumulo
+     $ /foo/bar/adevcloud/accumulo-1.4.1/bin/accumulo init
 
+_this will prompt for an instance name and password for the Accumulo root user_
 
 ## Start Accumulo
+     $ /foo/bar/adevcloud/accumulo-1.4.1/bin/start-all.sh
+
+## Checkout Accumulo
+    $ /foo/bar/adevcloud/accumulo-1.4.1/bin/accumulo shell
+
 
 
 
