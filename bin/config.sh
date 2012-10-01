@@ -4,9 +4,10 @@
 
 # figure out the install directory
 ADC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-ADC_HADOOP=$ADC_HOME/hadoop-0.20.203.1-SNAPSHOT
-ADC_ZOOKEEPER=$ADC_HOME/zookeeper-3.3.6
-ADC_ACCUMULO=$ADC_HOME/accumulo-1.4.1
+ADC_HOME=$ADC_HOME/..
+ADC_HADOOP=$ADC_HOME/deploy/hadoop-0.20.205.0
+ADC_ZOOKEEPER=$ADC_HOME/deploy/zookeeper-3.3.5
+ADC_ACCUMULO=$ADC_HOME/deploy/accumulo-1.4.1
 
 # Test to see if JAVA_HOME is set
 if [ -z "$JAVA_HOME" ]; then 
