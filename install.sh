@@ -4,6 +4,24 @@
 BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 $BASE/bin/download.sh
-$BASE/bin/config.sh < `echo "\n"; echo "\n"; echo "\n"`
-$BASE/bin/init.sh < `echo "Y"; echo "accumulo"; echo "secret"; echo "secret"`
+
+# do not delete the blank lines below
+$BASE/bin/config.sh<<EOF
+
+
+
+
+EOF
+
+# get the new Hadoop environment variables
+source ~/.bashrc
+
+# initialize the system.
+$BASE/bin/init.sh <<EOF
+Y
+accumulo
+secret
+secret
+EOF
+
 

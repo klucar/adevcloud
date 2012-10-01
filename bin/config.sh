@@ -15,6 +15,9 @@ if [ -z "$JAVA_HOME" ]; then
   echo Please set JAVA_HOME and re-run this script
 fi
 
+# Delete existing data directory if it exists
+rm -rf $ADC_HOME/data
+
 # Copy files from conf directories to their prospective build dirs
 cp $ADC_HOME/conf/hadoop/* $ADC_HADOOP/conf/.
 cp $ADC_HOME/conf/zookeeper/* $ADC_ZOOKEEPER/conf/.
