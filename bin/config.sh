@@ -76,7 +76,7 @@ prompt_dir ZOO_DATA "Zookeeper Data Location" "$ADC_HOME/data/zookeeper"
 sed 's|XX_ZOOKEEPER_DATA_XX|'$ZOO_DATA'|g' $ADC_HOME/conf/zookeeper/zoo.cfg > $ADC_ZOOKEEPER/conf/zoo.cfg 
 
 # Save ADC_HOME for other scripts
-echo $ADC_HOME > $ADC_HOME/.adchome
+#echo $ADC_HOME > $ADC_HOME/.adchome
 
 # Add Environment Variables to bashrc
 if [ "$HADOOP_HOME" != "$ADC_HADOOP" ]; then
