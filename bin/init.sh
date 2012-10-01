@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 ADC_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
+ADC_HOME=$ADC_HOME/..
 ADC_HADOOP=$ADC_HOME/hadoop-0.20.205.0
 ADC_ZOOKEEPER=$ADC_HOME/zookeeper-3.3.5
 ADC_ACCUMULO=$ADC_HOME/accumulo-1.4.1
