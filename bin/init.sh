@@ -16,6 +16,7 @@ $ADC_ZOOKEEPER/bin/zkServer.sh start
 
 # Init Accumulo
 #$ADC_ACCUMULO/bin/accumulo init < `echo "accumulo"; echo "secret"; echo "secret"`
+$ADC_ACCUMULO/bin/accumulo init
 
 # Start Accumulo
 $ADC_ACCUMULO/bin/start-all.sh
